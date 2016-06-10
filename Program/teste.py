@@ -14,10 +14,16 @@ fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\tx
 
 # First thing to code: Write down all the relevant info about one player in one match in a txt file
 
-api = dota2api.Initialise(apiKey)
 
-def initialise(id):
-	matchList = api.get_match_history(account_id=accountID)
+
+def initialise():
+	while (1):
+		try:
+			matchList = api.get_match_history(account_id=accountID)
+			print("We got the match history with success")
+			break
+		except RuntimeError:
+			print("Error on getting match history")
 	return (matchList)
 
 def organizeMatches(matches, index):
@@ -55,13 +61,20 @@ def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastH
 		toCreate.write(lastHits + "/" + denies + "\n\n")
 
 def main():
-	matchList = initialise(matchID)
+	matchList = initialise()
 	matches = matchList['matches']
 	index = matchList['num_results']
 	for x in range(0, index):
 		matchAux = organizeMatches(matches, x)
-		getPlayerInfo(api.get_match_details(matchAux))
+		while(1):
+			try:
+				getPlayerInfo(api.get_match_details(matchAux))
+				print("We got match number " + str(x + 1) + " with success")
+				break
+			except:
+				print("Error on getting match number " + str(x + 1))
 
+api = dota2api.Initialise(apiKey)
 main()
 
 
