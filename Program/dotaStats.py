@@ -5,10 +5,10 @@
 import dota2api
 ##############################################
 
-#################GLOBAL VARIABLES#################
+################GLOBAL VARIABLES################
 accountID = 215907469
 fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
-##################################################
+################################################
 
 # First thing to code: Write down all the relevant info about one player in one match in a txt file
 
