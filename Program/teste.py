@@ -7,7 +7,6 @@ import dota2api
 
 #################GLOBAL VARIABLES#################
 apiKey = "C97C5017DD6A5424C3271ABAA2B0E0AC"
-matchID = 2391959487
 accountID = 215907469
 fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
 ##################################################
@@ -22,7 +21,7 @@ def initialise():
 			matchList = api.get_match_history(account_id=accountID)
 			print("We got the match history with success")
 			break
-		except RuntimeError:
+		except:
 			print("Error on getting match history")
 	return (matchList)
 
@@ -40,7 +39,7 @@ def getPlayerInfo(match):
 	while(1):
 		player = players[x]
 		playerID = player['account_id']
-		if (playerID == 215907469):
+		if (playerID == accountID):
 			break
 		x = x + 1
 
