@@ -6,14 +6,11 @@ import dota2api
 ##############################################
 
 #################GLOBAL VARIABLES#################
-apiKey = "C97C5017DD6A5424C3271ABAA2B0E0AC"
 accountID = 215907469
 fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
 ##################################################
 
 # First thing to code: Write down all the relevant info about one player in one match in a txt file
-
-
 
 def initialise():
 	while (1):
@@ -53,7 +50,7 @@ def getPlayerInfo(match):
 	denies = player['denies']
 	writeInFile(str(playerID), heroName, str(killNumber), str(assistNumber), str(deathNumber), str(lastHits), str(denies))
 
-def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies):
+def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies): # Make it to receive an array with those information
 	with open(fileDirectory + playerID + ".txt", "a") as toCreate:
 		toCreate.write(playerID + " as " + heroName + "\n")
 		toCreate.write(killNumber + "/" + deathNumber + "/" + assistNumber + "\n")
@@ -63,7 +60,7 @@ def main():
 	matchList = initialise()
 	matches = matchList['matches']
 	index = matchList['num_results']
-	for x in range(0, index):
+	for x in range(0, 1):
 		matchAux = organizeMatches(matches, x)
 		while(1):
 			try:
@@ -73,6 +70,7 @@ def main():
 			except:
 				print("Error on getting match number " + str(x + 1))
 
+apiKey = input()
 api = dota2api.Initialise(apiKey)
 main()
 
