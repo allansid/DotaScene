@@ -20,7 +20,11 @@ That's the file path to the folder where my txt file is.
 
 ### Functions explained
 **initialise**: Saves the match history of a certain steam account
+
 **organizeMatches**: Receives a list of matches and the index to access the match in the array and it returns that match's ID
+
 **getPlayerInfo**: Receives the match and access the player with the given account ID. Takes all the wanted information from it and pass it as parameter to another function called writeInFile.
+
 **writeInFile**: Takes all the information passed and saves it on the TXT file
+
 **main**: Calls the other functions to save all the information on the TXT for all the matches saved
