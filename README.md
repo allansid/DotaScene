@@ -35,3 +35,11 @@ That's the file path to the folder where my txt file is.
 **writeInFile**: Takes all the information passed and saves it on the TXT file
 
 **main**: Calls the other functions to save all the information on the TXT for all the matches saved
+
+**findFile**: Looks for a file with the accountID provided as name, returns true if finds it
+
+**getMatchDetails**: Receives a match list and the target account ID and gathers the information about that player
+
+**greetings**: Opener function, decides what the program will do with an input from the user
+
+**optionOne**: Gathers the information of a player last games and saves on a txt (Using the past functions)

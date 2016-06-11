@@ -56,7 +56,7 @@ def getPlayerInfo(match, targetAccountID):
 	denies = player['denies']
 	writeInFile(str(playerID), heroName, str(killNumber), str(assistNumber), str(deathNumber), str(lastHits), str(denies))
 
-def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies): # Make it to receive an array with those information
+def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies): 
 	with open(fileDirectory + playerID + ".txt", "a") as toCreate:
 		toCreate.write(playerID + " as " + heroName + "\n")
 		toCreate.write(killNumber + "/" + deathNumber + "/" + assistNumber + "\n")
