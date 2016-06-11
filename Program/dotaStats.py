@@ -6,13 +6,12 @@ import dota2api
 ##############################################
 
 ################GLOBAL VARIABLES################
-accountID = 215907469
 fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
 ################################################
 
 # First thing to code: Write down all the relevant info about one player in one match in a txt file
 
-def initialise():
+def getMatchHistory(accountID):
 	while (1):
 		try:
 			matchList = api.get_match_history(account_id=accountID)
@@ -26,7 +25,7 @@ def organizeMatches(matches, index):
 	match = matches[index]
 	return (match['match_id'])
 
-def getPlayerInfo(match):
+def getPlayerInfo(match, accountID):
 	players = match['players']
 	player = players[2]
 	playerID = player['account_id']
@@ -56,20 +55,40 @@ def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastH
 		toCreate.write(killNumber + "/" + deathNumber + "/" + assistNumber + "\n")
 		toCreate.write(lastHits + "/" + denies + "\n\n")
 
-def main():
-	matchList = initialise()
+def getMatchDetails(matchList, accountID):
 	matches = matchList['matches']
 	index = matchList['num_results']
-	for x in range(0, index):
+	for x in range(0, 10): # Change it up to index
 		matchAux = organizeMatches(matches, x)
 		while(1):
 			try:
-				getPlayerInfo(api.get_match_details(matchAux))
+				getPlayerInfo(api.get_match_details(matchAux), accountID)
 				print("We got match number " + str(x + 1) + " with success")
 				break
 			except:
 				print("Error on getting match number " + str(x + 1))
 
+def greetings():
+	print("Type 1 to save last matches played by a certain account")
+	print("Type 0 to quit")
+	option = int(input())
+	return option
+
+def optionOne():
+	print("What's the account ID?")
+	accountID = int(input())
+	matchList = getMatchHistory(accountID)
+	getMatchDetails(matchList, accountID)
+
+def main():
+	option = greetings()
+	if (option == 0):
+		return
+	elif (option == 1):
+		optionOne()
+
+##########################RUNNER##########################
 apiKey = input()
 api = dota2api.Initialise(apiKey)
 main()
+##########################################################
