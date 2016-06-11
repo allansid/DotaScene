@@ -4,6 +4,7 @@
 ##################IMPORTS#####################
 import dota2api
 import os
+from datetime import datetime
 ##############################################
 
 ################GLOBAL VARIABLES################
@@ -56,7 +57,7 @@ def getPlayerInfo(match, targetAccountID):
 	denies = player['denies']
 	writeInFile(str(playerID), heroName, str(killNumber), str(assistNumber), str(deathNumber), str(lastHits), str(denies))
 
-def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies): 
+def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies):
 	with open(fileDirectory + playerID + ".txt", "a") as toCreate:
 		toCreate.write(playerID + " as " + heroName + "\n")
 		toCreate.write(killNumber + "/" + deathNumber + "/" + assistNumber + "\n")
@@ -98,6 +99,12 @@ def optionOne():
 	targetAccountID = int(input())
 	matchList = getMatchHistory(targetAccountID)
 	getMatchDetails(matchList, targetAccountID)
+	return targetAccountID
+
+def updateAccountOne(myAccountID, targetAccountID):
+	nowTime = datetime.now()
+	with open(accountDirectory + str(myAccountID) + ".txt", "a") as saveConsult:
+		saveConsult.write("("+str(nowTime.day) + "/" + str(nowTime.month) + "/" + str(nowTime.year) + " - " + str(nowTime.hour) + ":" + str(nowTime.minute) + ") - " + str(myAccountID) + " user has consulted " + str(targetAccountID) + " last played matches\n")
 
 def main():
 	myAccountID = login()
@@ -105,7 +112,8 @@ def main():
 	if (option == 0):
 		return
 	elif (option == 1):
-		optionOne()
+		targetAccountID = optionOne()
+		updateAccountOne(myAccountID, targetAccountID)
 
 ##########################RUNNER##########################
 print("What is your API Key?")

@@ -43,3 +43,5 @@ That's the file path to the folder where my txt file is.
 **greetings**: Opener function, decides what the program will do with an input from the user
 
 **optionOne**: Gathers the information of a player last games and saves on a txt (Using the past functions)
+
+**updateAccountOne**: Updates the account txt file to save that that person has consulted the application about someones last games 
