@@ -26,7 +26,7 @@ You will need to change the fileDirectory variable (line 10 on file dotaStats.py
 That's the file path to the folder where my txt file is.
 
 ### Functions explained
-**initialise**: Saves the match history of a certain steam account
+**getMatchHistory**: Saves the match history of a certain steam account
 
 **organizeMatches**: Receives a list of matches and the index to access the match in the array and it returns that match's ID
 

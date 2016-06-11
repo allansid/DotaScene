@@ -60,7 +60,7 @@ def main():
 	matchList = initialise()
 	matches = matchList['matches']
 	index = matchList['num_results']
-	for x in range(0, 1):
+	for x in range(0, index):
 		matchAux = organizeMatches(matches, x)
 		while(1):
 			try:
@@ -73,5 +73,3 @@ def main():
 apiKey = input()
 api = dota2api.Initialise(apiKey)
 main()
-
-
