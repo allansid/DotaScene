@@ -10,6 +10,7 @@ from datetime import datetime
 ################GLOBAL VARIABLES################
 fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
 accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\Accounts\\"
+responseArray = []
 ################################################
 
 # First thing to code: Write down all the relevant info about one player in one match in a txt file
@@ -38,20 +39,29 @@ def getPlayerInfo(match, targetAccountID):
 	x = 0
 	while(1):
 		player = players[x]
-		playerID = player['account_id']
-		if (playerID == targetAccountID):
+		if (player['account_id'] == targetAccountID):
+			responseArray.append(player['account_id'])
 			break
 		x = x + 1
 
-	heroName = player['hero_name']
+	responseArray.append(player['hero_name'])
+	responseArray.append(player['kills'])
+	responseArray.append(player['deaths'])
+	responseArray.append(player['assists'])
+	responseArray.append(player['last_hits'])
+	responseArray.append(player['denies'])
 
-	killNumber = player['kills']
-	assistNumber = player['assists']
-	deathNumber = player['deaths']
 
-	lastHits = player['last_hits']
-	denies = player['denies']
-	writeInFile(str(playerID), heroName, str(killNumber), str(assistNumber), str(deathNumber), str(lastHits), str(denies))
+	#writeInFile(str(playerID), heroName, str(killNumber), str(assistNumber), str(deathNumber), str(lastHits), str(denies))
+
+def printResults():
+	aux = 0
+	for x in range(0, 100):
+		with open(fileDirectory + str(responseArray[0]) + ".txt", "a") as toCreate:
+			toCreate.write(str(responseArray[0]) + " as " + str(responseArray[aux+1]) + "\n")
+			toCreate.write(str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" + str(responseArray[x+4]) + "\n")
+			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
+		aux = aux + 7
 
 def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies):
 	with open(fileDirectory + playerID + ".txt", "a") as toCreate:
@@ -95,6 +105,7 @@ def optionOne():
 	targetAccountID = int(input())
 	matchList = getMatchHistory(targetAccountID)
 	getMatchDetails(matchList, targetAccountID)
+	printResults()
 	return targetAccountID
 
 def updateAccountOne(myAccountID, targetAccountID):
@@ -116,4 +127,5 @@ print("What is your API Key?")
 apiKey = input()
 api = dota2api.Initialise(apiKey)
 main()
+printResults()
 ##########################################################

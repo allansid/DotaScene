@@ -1,6 +1,4 @@
 This file will store all the actions taken by the user 215907469
 
 
-(12/6/2016 - 2:14) - 215907469 user has consulted 215907469 last played matches
-(12/6/2016 - 2:31) - 215907469 user has consulted 167661645 last played matches
-(13/6/2016 - 16:37) - 215907469 user has consulted 215907469 last played matches
+(14/6/2016 - 12:30) - 215907469 user has consulted 215907469 last played matches
