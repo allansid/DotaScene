@@ -32,13 +32,15 @@ That's the file path to the folder where my txt file is.
 
 **getPlayerInfo**: Receives the match and access the player with the given account ID. Takes all the wanted information from it and pass it as parameter to another function called writeInFile.
 
-**writeInFile**: Takes all the information passed and saves it on the TXT file
-
 **main**: Calls the other functions to save all the information on the TXT for all the matches saved
 
 **findFile**: Looks for a file with the accountID provided as name, returns true if finds it
 
 **getMatchDetails**: Receives a match list and the target account ID and gathers the information about that player
+
+**login**: Receives your account ID and checks if there is a folder for it, if not, it creates, if there is, keeps going.
+
+**printResults**: Writes the results of the query in a txt file, all at once
 
 **greetings**: Opener function, decides what the program will do with an input from the user
 

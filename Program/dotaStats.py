@@ -13,7 +13,23 @@ accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\
 responseArray = []
 ################################################
 
-# First thing to code: Write down all the relevant info about one player in one match in a txt file
+def greetings():
+	print("Type 1 to save last matches played by a certain account")
+	print("Type 0 to quit")
+	option = int(input())
+	return option
+
+def login():
+	print("What's YOUR account ID")
+	myAccountID = int(input())
+	if (findFile(str(myAccountID) + ".txt", accountDirectory)):
+		return myAccountID
+	else:
+		print("It's your first time here, let me create your folder")
+		print("We will always save what you're doing in your personal folder")
+		with open(accountDirectory + str(myAccountID) + ".txt", "a") as createAccount:
+			createAccount.write("This file will store all the actions taken by the user " + str(myAccountID) + "\n\n\n")
+		return myAccountID
 
 def findFile(name, path):
 	for root, dirs, files in os.walk(path):
@@ -51,9 +67,6 @@ def getPlayerInfo(match, targetAccountID):
 	responseArray.append(player['last_hits'])
 	responseArray.append(player['denies'])
 
-
-	#writeInFile(str(playerID), heroName, str(killNumber), str(assistNumber), str(deathNumber), str(lastHits), str(denies))
-
 def printResults():
 	aux = 0
 	for x in range(0, 100):
@@ -62,12 +75,6 @@ def printResults():
 			toCreate.write(str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" + str(responseArray[x+4]) + "\n")
 			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
 		aux = aux + 7
-
-def writeInFile(playerID, heroName, killNumber, assistNumber, deathNumber, lastHits, denies):
-	with open(fileDirectory + playerID + ".txt", "a") as toCreate:
-		toCreate.write(playerID + " as " + heroName + "\n")
-		toCreate.write(killNumber + "/" + deathNumber + "/" + assistNumber + "\n")
-		toCreate.write(lastHits + "/" + denies + "\n\n")
 
 def getMatchDetails(matchList, targetAccountID):
 	matches = matchList['matches']
@@ -81,24 +88,6 @@ def getMatchDetails(matchList, targetAccountID):
 				break
 			except:
 				print("Error on getting match number " + str(x + 1))
-
-def greetings():
-	print("Type 1 to save last matches played by a certain account")
-	print("Type 0 to quit")
-	option = int(input())
-	return option
-
-def login():
-	print("What's YOUR account ID")
-	myAccountID = int(input())
-	if (findFile(str(myAccountID) + ".txt", accountDirectory)):
-		return myAccountID
-	else:
-		print("It's your first time here, let me create your folder")
-		print("We will always save what you're doing in your personal folder")
-		with open(accountDirectory + str(myAccountID) + ".txt", "a") as createAccount:
-			createAccount.write("This file will store all the actions taken by the user " + str(myAccountID) + "\n\n\n")
-		return myAccountID
 
 def optionOne():
 	print("What's the account ID?")
