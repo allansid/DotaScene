@@ -44,4 +44,4 @@ That's the file path to the folder where my txt file is.
 
 **optionOne**: Gathers the information of a player last games and saves on a txt (Using the past functions)
 
-**updateAccountOne**: Updates the account txt file to save that that person has consulted the application about someones last games 
+**updateAccountOne**: Updates the account txt file to save that that person has consulted the application about someones last games

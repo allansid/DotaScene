@@ -35,10 +35,6 @@ def organizeMatches(matches, index):
 
 def getPlayerInfo(match, targetAccountID):
 	players = match['players']
-	player = players[2]
-	playerID = player['account_id']
-	players = match['players']
-
 	x = 0
 	while(1):
 		player = players[x]
