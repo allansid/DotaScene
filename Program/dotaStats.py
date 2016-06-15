@@ -16,13 +16,16 @@ accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\
 
 def main():
 	myAccountID = greetings.login()
-	option = greetings.greetings()
-	if (option == 0):
-		return
-	elif (option == 1):
-		o1.optionOne(api, myAccountID)
-	elif (option == 2):
-		o2.optionTwo()
+	while (1):
+		option = greetings.greetings()
+		if (option == 0):
+			break
+		elif (option == 1):
+			o1.optionOne(api, myAccountID)
+		elif (option == 2):
+			o2.optionTwo()
+		elif (option != 0 or option != 1 or option != 2):
+			print("Wrong option, try again\n")
 
 ##########################RUNNER##########################
 print("What is your API Key?")
