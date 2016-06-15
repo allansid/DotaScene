@@ -17,7 +17,7 @@ Building a program that will receive a player's ID and return the last games pla
 `
 
 ## Modifications on files
-You will need to change the fileDirectory variable (line 10 on file dotaStats.py) and put your directory to the folder where the txt file that you want all the information to be saved. For exemple:
+You will need to change the fileDirectory variable (line 10 on file dotaStats.py) and put your directory to the folder where the txt file that you want all the information to be saved, and change the accountDirectory as well. For exemple:
 
 `
 	fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"

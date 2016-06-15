@@ -1,357 +1,361 @@
+215907469 as Storm Spirit
+17/3/14
+202/2
+
 215907469 as Lion
-1/9/17
+1/9/202
 46/4
 
 215907469 as Bane
-2/11/46
+2/11/2
 24/1
 
 215907469 as Windranger
-5/1/4
+5/1/215907469
 100/10
 
 215907469 as Lion
-2/8/215907469
+2/8/Lion
 48/3
 
 215907469 as Witch Doctor
-5/1/Bane
+5/1/1
 27/4
 
 215907469 as Ursa
-8/2/2
+8/2/9
 130/15
 
 215907469 as Lina
-8/10/11
+8/10/17
 102/3
 
 215907469 as Vengeful Spirit
-1/5/20
+1/5/46
 18/3
 
 215907469 as Slark
-9/8/24
+9/8/4
 250/9
 
 215907469 as Lina
-9/5/1
+9/5/215907469
 184/3
 
 215907469 as Death Prophet
-12/11/215907469
+12/11/Bane
 140/3
 
 215907469 as Lion
-0/7/Windranger
+0/7/2
 27/3
 
 215907469 as Juggernaut
-15/9/5
+15/9/11
 334/24
 
 215907469 as Lifestealer
-9/7/1
+9/7/20
 207/25
 
 215907469 as Night Stalker
-9/10/17
+9/10/24
 69/0
 
 215907469 as Mirana
-4/8/100
+4/8/1
 40/2
 
 215907469 as Queen of Pain
-11/5/10
+11/5/215907469
 229/5
 
 215907469 as Lifestealer
-20/7/215907469
+20/7/Windranger
 254/7
 
 215907469 as Slark
-5/11/Lion
+5/11/5
 71/6
 
 215907469 as Windranger
-11/7/2
+11/7/1
 147/2
 
 215907469 as Faceless Void
-5/2/8
+5/2/17
 77/6
 
 215907469 as Templar Assassin
-15/4/19
+15/4/100
 184/10
 
 215907469 as Juggernaut
-25/2/48
+25/2/10
 439/23
 
 215907469 as Death Prophet
-16/4/3
+16/4/215907469
 340/9
 
 215907469 as Queen of Pain
-10/12/215907469
+10/12/Lion
 282/11
 
 215907469 as Drow Ranger
-1/5/Witch Doctor
+1/5/2
 84/12
 
 215907469 as Dragon Knight
-7/8/5
+7/8/8
 152/12
 
 215907469 as Lion
-0/7/1
+0/7/19
 6/0
 
 215907469 as Death Prophet
-7/9/11
+7/9/48
 96/5
 
 215907469 as Sven
-11/4/27
+11/4/3
 330/15
 
 215907469 as Lifestealer
-20/0/4
+20/0/215907469
 259/9
 
 215907469 as Beastmaster
-3/5/215907469
+3/5/Witch Doctor
 151/2
 
 215907469 as Windranger
-7/9/Ursa
+7/9/5
 104/6
 
 215907469 as Slardar
-4/5/8
+4/5/1
 106/6
 
 215907469 as Juggernaut
-17/5/2
+17/5/11
 360/17
 
 215907469 as Templar Assassin
-18/0/13
+18/0/27
 353/9
 
 215907469 as Outworld Devourer
-29/8/130
+29/8/4
 265/10
 
 215907469 as Zeus
-14/4/15
+14/4/215907469
 217/8
 
 215907469 as Arc Warden
-4/6/215907469
+4/6/Ursa
 156/6
 
 215907469 as Anti-Mage
-3/4/Lina
+3/4/8
 368/2
 
 215907469 as Slark
-13/6/8
+13/6/2
 185/2
 
 215907469 as Alchemist
-15/3/10
+15/3/13
 276/8
 
 215907469 as Juggernaut
-8/10/3
+8/10/130
 322/16
 
 215907469 as Templar Assassin
-6/4/102
+6/4/15
 290/10
 
 215907469 as Tiny
-6/5/3
+6/5/215907469
 337/9
 
 215907469 as Windranger
-10/9/215907469
+10/9/Lina
 257/8
 
 215907469 as Alchemist
-21/11/Vengeful Spirit
+21/11/8
 410/2
 
 215907469 as Bristleback
-0/9/1
+0/9/10
 84/5
 
 215907469 as Wraith King
-9/2/5
+9/2/3
 213/18
 
 215907469 as Invoker
-3/6/2
+3/6/102
 89/4
 
 215907469 as Shadow Fiend
-19/7/18
+19/7/3
 622/13
 
 215907469 as Juggernaut
-7/3/3
+7/3/215907469
 320/6
 
 215907469 as Templar Assassin
-11/7/215907469
+11/7/Vengeful Spirit
 449/15
 
 215907469 as Slark
-7/4/Slark
+7/4/1
 190/18
 
 215907469 as Queen of Pain
-7/6/9
+7/6/5
 256/7
 
 215907469 as Queen of Pain
-9/7/8
+9/7/2
 149/7
 
 215907469 as Gyrocopter
-8/4/9
+8/4/18
 164/13
 
 215907469 as Windranger
-13/2/250
+13/2/3
 166/5
 
 215907469 as Lina
-13/10/9
+13/10/215907469
 335/3
 
 215907469 as Lifestealer
-12/7/215907469
+12/7/Slark
 284/2
 
 215907469 as Gyrocopter
-15/5/Lina
+15/5/9
 331/8
 
 215907469 as Ember Spirit
-12/5/9
+12/5/8
 250/1
 
 215907469 as Windranger
-0/5/5
+0/5/9
 38/4
 
 215907469 as Templar Assassin
-13/8/14
+13/8/250
 311/14
 
 215907469 as Anti-Mage
-13/4/184
+13/4/9
 436/11
 
 215907469 as Dazzle
-0/1/3
+0/1/215907469
 24/3
 
 215907469 as Undying
-4/5/215907469
+4/5/Lina
 35/2
 
 215907469 as Shadow Fiend
-10/5/Death Prophet
+10/5/9
 445/11
 
 215907469 as Templar Assassin
-16/6/12
+16/6/5
 328/19
 
 215907469 as Windranger
-10/5/11
+10/5/14
 274/12
 
 215907469 as Silencer
-1/8/21
+1/8/184
 81/13
 
 215907469 as Windranger
-11/6/140
+11/6/3
 247/10
 
 215907469 as Dazzle
-4/6/3
+4/6/215907469
 43/2
 
 215907469 as Queen of Pain
-14/6/215907469
+14/6/Death Prophet
 190/9
 
 215907469 as Templar Assassin
-2/5/Lion
+2/5/12
 108/12
 
 215907469 as Gyrocopter
-3/10/0
+3/10/11
 214/6
 
 215907469 as Winter Wyvern
-5/4/7
+5/4/21
 24/1
 
 215907469 as Invoker
-4/10/19
+4/10/140
 226/8
 
 215907469 as Razor
-8/9/27
+8/9/3
 193/5
 
 215907469 as Invoker
-5/10/3
+5/10/215907469
 110/5
 
 215907469 as Invoker
-4/7/215907469
+4/7/Lion
 162/5
 
 215907469 as Queen of Pain
-6/6/Juggernaut
+6/6/0
 116/5
 
 215907469 as Doom
-8/9/15
+8/9/7
 158/3
 
 215907469 as Wraith King
-5/6/9
+5/6/19
 213/16
 
 215907469 as Shadow Fiend
-6/3/21
+6/3/27
 300/8
 
 215907469 as Lifestealer
-19/0/334
+19/0/3
 310/10
 
 215907469 as Templar Assassin
-7/6/24
+7/6/215907469
 208/13
 
 215907469 as Sven
-9/1/215907469
+9/1/Juggernaut
 182/19
 
 215907469 as Zeus
-19/4/Lifestealer
+19/4/15
 110/2
 
 215907469 as Templar Assassin
@@ -359,442 +363,38 @@
 242/13
 
 215907469 as Doom
-0/7/7
+0/7/21
 70/2
 
 215907469 as Slark
-6/7/18
+6/7/334
 177/5
 
 215907469 as Windranger
-12/5/207
+12/5/24
 260/19
 
 215907469 as Invoker
-13/5/25
+13/5/215907469
 230/8
 
 215907469 as Shadow Fiend
-12/7/215907469
+12/7/Lifestealer
 460/27
 
 215907469 as Ember Spirit
-22/3/Night Stalker
+22/3/9
 245/10
 
 215907469 as Templar Assassin
-10/3/9
+10/3/7
 184/13
 
 215907469 as Dazzle
-2/5/10
+2/5/18
 35/1
 
 215907469 as Templar Assassin
-11/7/26
+11/7/207
 241/18
-
-215907469 as Queen of Pain
-10/1/69
-223/14
-
-215907469 as Lion
-1/9/17
-46/4
-
-215907469 as Bane
-2/11/46
-24/1
-
-215907469 as Windranger
-5/1/4
-100/10
-
-215907469 as Lion
-2/8/215907469
-48/3
-
-215907469 as Witch Doctor
-5/1/Bane
-27/4
-
-215907469 as Ursa
-8/2/2
-130/15
-
-215907469 as Lina
-8/10/11
-102/3
-
-215907469 as Vengeful Spirit
-1/5/20
-18/3
-
-215907469 as Slark
-9/8/24
-250/9
-
-215907469 as Lina
-9/5/1
-184/3
-
-215907469 as Death Prophet
-12/11/215907469
-140/3
-
-215907469 as Lion
-0/7/Windranger
-27/3
-
-215907469 as Juggernaut
-15/9/5
-334/24
-
-215907469 as Lifestealer
-9/7/1
-207/25
-
-215907469 as Night Stalker
-9/10/17
-69/0
-
-215907469 as Mirana
-4/8/100
-40/2
-
-215907469 as Queen of Pain
-11/5/10
-229/5
-
-215907469 as Lifestealer
-20/7/215907469
-254/7
-
-215907469 as Slark
-5/11/Lion
-71/6
-
-215907469 as Windranger
-11/7/2
-147/2
-
-215907469 as Faceless Void
-5/2/8
-77/6
-
-215907469 as Templar Assassin
-15/4/19
-184/10
-
-215907469 as Juggernaut
-25/2/48
-439/23
-
-215907469 as Death Prophet
-16/4/3
-340/9
-
-215907469 as Queen of Pain
-10/12/215907469
-282/11
-
-215907469 as Drow Ranger
-1/5/Witch Doctor
-84/12
-
-215907469 as Dragon Knight
-7/8/5
-152/12
-
-215907469 as Lion
-0/7/1
-6/0
-
-215907469 as Death Prophet
-7/9/11
-96/5
-
-215907469 as Sven
-11/4/27
-330/15
-
-215907469 as Lifestealer
-20/0/4
-259/9
-
-215907469 as Beastmaster
-3/5/215907469
-151/2
-
-215907469 as Windranger
-7/9/Ursa
-104/6
-
-215907469 as Slardar
-4/5/8
-106/6
-
-215907469 as Juggernaut
-17/5/2
-360/17
-
-215907469 as Templar Assassin
-18/0/13
-353/9
-
-215907469 as Outworld Devourer
-29/8/130
-265/10
-
-215907469 as Zeus
-14/4/15
-217/8
-
-215907469 as Arc Warden
-4/6/215907469
-156/6
-
-215907469 as Anti-Mage
-3/4/Lina
-368/2
-
-215907469 as Slark
-13/6/8
-185/2
-
-215907469 as Alchemist
-15/3/10
-276/8
-
-215907469 as Juggernaut
-8/10/3
-322/16
-
-215907469 as Templar Assassin
-6/4/102
-290/10
-
-215907469 as Tiny
-6/5/3
-337/9
-
-215907469 as Windranger
-10/9/215907469
-257/8
-
-215907469 as Alchemist
-21/11/Vengeful Spirit
-410/2
-
-215907469 as Bristleback
-0/9/1
-84/5
-
-215907469 as Wraith King
-9/2/5
-213/18
-
-215907469 as Invoker
-3/6/2
-89/4
-
-215907469 as Shadow Fiend
-19/7/18
-622/13
-
-215907469 as Juggernaut
-7/3/3
-320/6
-
-215907469 as Templar Assassin
-11/7/215907469
-449/15
-
-215907469 as Slark
-7/4/Slark
-190/18
-
-215907469 as Queen of Pain
-7/6/9
-256/7
-
-215907469 as Queen of Pain
-9/7/8
-149/7
-
-215907469 as Gyrocopter
-8/4/9
-164/13
-
-215907469 as Windranger
-13/2/250
-166/5
-
-215907469 as Lina
-13/10/9
-335/3
-
-215907469 as Lifestealer
-12/7/215907469
-284/2
-
-215907469 as Gyrocopter
-15/5/Lina
-331/8
-
-215907469 as Ember Spirit
-12/5/9
-250/1
-
-215907469 as Windranger
-0/5/5
-38/4
-
-215907469 as Templar Assassin
-13/8/14
-311/14
-
-215907469 as Anti-Mage
-13/4/184
-436/11
-
-215907469 as Dazzle
-0/1/3
-24/3
-
-215907469 as Undying
-4/5/215907469
-35/2
-
-215907469 as Shadow Fiend
-10/5/Death Prophet
-445/11
-
-215907469 as Templar Assassin
-16/6/12
-328/19
-
-215907469 as Windranger
-10/5/11
-274/12
-
-215907469 as Silencer
-1/8/21
-81/13
-
-215907469 as Windranger
-11/6/140
-247/10
-
-215907469 as Dazzle
-4/6/3
-43/2
-
-215907469 as Queen of Pain
-14/6/215907469
-190/9
-
-215907469 as Templar Assassin
-2/5/Lion
-108/12
-
-215907469 as Gyrocopter
-3/10/0
-214/6
-
-215907469 as Winter Wyvern
-5/4/7
-24/1
-
-215907469 as Invoker
-4/10/19
-226/8
-
-215907469 as Razor
-8/9/27
-193/5
-
-215907469 as Invoker
-5/10/3
-110/5
-
-215907469 as Invoker
-4/7/215907469
-162/5
-
-215907469 as Queen of Pain
-6/6/Juggernaut
-116/5
-
-215907469 as Doom
-8/9/15
-158/3
-
-215907469 as Wraith King
-5/6/9
-213/16
-
-215907469 as Shadow Fiend
-6/3/21
-300/8
-
-215907469 as Lifestealer
-19/0/334
-310/10
-
-215907469 as Templar Assassin
-7/6/24
-208/13
-
-215907469 as Sven
-9/1/215907469
-182/19
-
-215907469 as Zeus
-19/4/Lifestealer
-110/2
-
-215907469 as Templar Assassin
-11/4/9
-242/13
-
-215907469 as Doom
-0/7/7
-70/2
-
-215907469 as Slark
-6/7/18
-177/5
-
-215907469 as Windranger
-12/5/207
-260/19
-
-215907469 as Invoker
-13/5/25
-230/8
-
-215907469 as Shadow Fiend
-12/7/215907469
-460/27
-
-215907469 as Ember Spirit
-22/3/Night Stalker
-245/10
-
-215907469 as Templar Assassin
-10/3/9
-184/13
-
-215907469 as Dazzle
-2/5/10
-35/1
-
-215907469 as Templar Assassin
-11/7/26
-241/18
-
-215907469 as Queen of Pain
-10/1/69
-223/14
 
