@@ -1,6 +1,9 @@
 # Dota 2 Statics
 Building a program that will receive a player's ID and return the last games played with statics that can help someone prepare or learn from the player. I do not own the API beign used. It belongs to [Joshua Duffy](https://github.com/joshuaduffy).
 
+## Goals
+As I am coding this little project of mine, I can see it beign used by small groups of peoples who want to keep track of themselves and their friends as well. And I see it beign used by big groups like an actual Pro team to keep track of the team and oponents in a fast, usable and simple way. We'll see how it actually works out
+
 ## Table of contents
 - [Dependencies](https://github.com/divinoob/DotaScene#what-do-i-need-to-use-it)
 - [Modifications on files](https://github.com/divinoob/DotaScene#modifications-on-files)
@@ -24,6 +27,9 @@ You will need to change the fileDirectory variable (line 10 on file dotaStats.py
 `
 
 That's the file path to the folder where my txt file is.
+
+## JSON usage
+I'm using json files to fufil the need of having stored players ID related with their name in-game. I can add and delete users from a json file as for now. Later on I'll be trying to implement a 'list' function in order to show all the players saved in that file. Might even save more information about the players in this file.
 
 ### Functions explained
 **getMatchHistory**: Saves the match history of a certain steam account
