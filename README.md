@@ -31,7 +31,7 @@ That's the file path to the folder where my txt file is.
 ## JSON usage
 I'm using json files to fufil the need of having stored players ID related with their name in-game. I can add and delete users from a json file as for now. Later on I'll be trying to implement a 'list' function in order to show all the players saved in that file. Might even save more information about the players in this file.
 
-### Functions explained
+## Functions explained
 **getMatchHistory**: Saves the match history of a certain steam account
 
 **organizeMatches**: Receives a list of matches and the index to access the match in the array and it returns that match's ID

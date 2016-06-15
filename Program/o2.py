@@ -10,14 +10,21 @@ dictDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\di
 ################################################
 
 def optionTwo():
-    print ("Type 1 to list the saved ID's")
+    print ("Type 1 to search an ID")
     print ("Type 2 to add a ID to the list")
     print ("Type 3 to remove a saved AD")
     option = int(input())
 
-    #if (option == 1):
+    if (option == 1):
+        print ("What's the name of the person you want to check?")
+        name = input()
+        fileToJson = {}
+        with open('C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\dictID\\ID.json') as loadFile:
+            data = json.load(loadFile)
+        print (name + "'s ID is " + str(data[name]))
 
-    if (option == 2):
+
+    elif (option == 2):
         print ("What is the name of the person you want to add?")
         name = input()
         print ("What is his/her ID?")
@@ -33,19 +40,9 @@ def optionTwo():
     elif (option == 3):
         print ("What is the name of the person you want out of the list?")
         name = input()
-        
+
         with open('C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\dictID\\ID.json') as loadFile:
             data = json.load(loadFile)
         del data[name]
         with open('C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\dictID\\ID.json', 'w') as writeFile:
             json.dump(data, writeFile)
-
-
-
-#import json
-
-#id = {'Divino': 215907469, 'xuco.R': 167661645}
-#id['ola'] = 0000
-#del id['ola']
-#with open ('test.txt', 'w') as outfile:
-#    json.dump(id, outfile)
