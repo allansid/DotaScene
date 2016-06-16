@@ -30,7 +30,7 @@ def findFile(name, path):
 			return True
 
 def greetings():
-	print("Type 1 to save last matches played by a certain account")
+	print("\nType 1 to save last matches played by a certain account")
 	print("Type 2 to access the ID's saved")
 	print("Type 0 to quit\n")
 	option = int(input())
