@@ -2,3 +2,6 @@ This file will store all the actions taken by the user 215907469
 
 
 (14/6/2016 - 21:2) - 215907469 user has consulted 215907469 last played matches
+(16/6/2016 - 16:46) - 215907469 user has consulted information on the player xuco.R
+(16/6/2016 - 16:56) - 215907469 user has removed xuco.R from the players list
+(16/6/2016 - 16:56) - 215907469 user has added xuco.R to the players list

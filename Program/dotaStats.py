@@ -23,7 +23,7 @@ def main():
 		elif (option == 1):
 			o1.optionOne(api, myAccountID)
 		elif (option == 2):
-			o2.optionTwo()
+			o2.optionTwo(myAccountID)
 		elif (option != 0 or option != 1 or option != 2):
 			print("Wrong option, try again\n")
 

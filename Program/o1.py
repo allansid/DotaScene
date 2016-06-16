@@ -66,7 +66,7 @@ def getPlayerInfo(match, targetAccountID):
 def printResults():
 	aux = 0
 	for x in range(0, 100):
-		with open(fileDirectory + str(responseArray[0]) + ".txt", "a") as toCreate:
+		with open(fileDirectory + str(responseArray[0]) + ".txt", "W") as toCreate:
 			toCreate.write(str(responseArray[0]) + " as " + str(responseArray[aux+1]) + "\n")
 			toCreate.write(str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" + str(responseArray[x+4]) + "\n")
 			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
