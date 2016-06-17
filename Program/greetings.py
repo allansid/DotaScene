@@ -19,9 +19,10 @@ def login():
 		return myAccountID
 	else:
 		print("It's your first time here, let me create your folder")
-		print("We will always save what you're doing in your personal folder\n")
+		print("We will always save what you're doing in your personal folder")
 		with open(accountDirectory + str(myAccountID) + ".txt", "a") as createAccount:
 			createAccount.write("This file will store all the actions taken by the user " + str(myAccountID) + "\n\n\n")
+		
 		return myAccountID
 
 def findFile(name, path):

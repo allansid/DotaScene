@@ -23,7 +23,7 @@ def getMatchHistory(targetAccountID, api):
 	while (1):
 		try:
 			matchList = api.get_match_history(account_id=targetAccountID)
-			print("We got the match history with success")
+			print("\nWe got the match history with success")
 			break
 		except:
 			print("Error on getting match history")
@@ -66,7 +66,7 @@ def getPlayerInfo(match, targetAccountID):
 def printResults():
 	aux = 0
 	for x in range(0, 100):
-		with open(fileDirectory + str(responseArray[0]) + ".txt", "W") as toCreate:
+		with open(fileDirectory + str(responseArray[0]) + ".txt", "a") as toCreate:
 			toCreate.write(str(responseArray[0]) + " as " + str(responseArray[aux+1]) + "\n")
 			toCreate.write(str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" + str(responseArray[x+4]) + "\n")
 			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
@@ -75,4 +75,5 @@ def printResults():
 def updateAccountOne(myAccountID, targetAccountID):
 	nowTime = datetime.now()
 	with open(accountDirectory + str(myAccountID) + ".txt", "a") as saveConsult:
-		saveConsult.write("("+str(nowTime.day) + "/" + str(nowTime.month) + "/" + str(nowTime.year) + " - " + str(nowTime.hour) + ":" + str(nowTime.minute) + ") - " + str(myAccountID) + " user has consulted " + str(targetAccountID) + " last played matches\n")
+		saveConsult.write("("+str(nowTime.day) + "/" + str(nowTime.month) + "/" + str(nowTime.year) + " - " + str(nowTime.hour) + ":" +
+		str(nowTime.minute) + ") - " + str(myAccountID) + " user has consulted " + str(targetAccountID) + " last played matches\n")
