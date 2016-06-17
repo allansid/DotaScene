@@ -4,16 +4,16 @@
 ##################IMPORTS#####################
 import os
 import jsonFunctions
+import fileOutputFunctions
 from datetime import datetime
 ##############################################
 
 ################GLOBAL VARIABLES################
-fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
-accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\Accounts\\"
+
 ################################################
 
 
-def login():
+def login(accountDirectory):
 	print("\nWhat's YOUR account ID?")
 	myAccountID = int(input())
 	exists = jsonFunctions.existsPlayer(myAccountID)
@@ -24,15 +24,9 @@ def login():
 		print("What is your name in game?\n")
 		name = input()
 		print("\nWe will always save what you're doing in your personal folder")
-		with open(accountDirectory + name + "File.txt", "a") as createAccount:
-			createAccount.write("This file will store all the actions taken by the user " + name + "\n\n\n")
-		jsonFunctions.addNewPlayer(name, myAccountID)
+		content = "This file will store all the actions taken by the user " + name + "\n\n\n"
+		fileOutputFunctions.createAccountFile(myAccountID, name, content, accountDirectory)
 		return myAccountID
-
-def findFile(name, path):
-	for root, dirs, files in os.walk(path):
-		if name in files:
-			return True
 
 def greetings():
 	print("\nType 1 to save last matches played by a certain account")

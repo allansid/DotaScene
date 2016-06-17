@@ -15,13 +15,13 @@ accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\
 ################################################
 
 def main():
-	myAccountID = greetings.login()
+	myAccountID = greetings.login(accountDirectory)
 	while (1):
 		option = greetings.greetings()
 		if (option == 0):
 			break
 		elif (option == 1):
-			o1.optionOne(api, myAccountID)
+			o1.optionOne(api, myAccountID, fileDirectory, accountDirectory)
 		elif (option == 2):
 			o2.optionTwo(myAccountID)
 		elif (option != 0 or option != 1 or option != 2):

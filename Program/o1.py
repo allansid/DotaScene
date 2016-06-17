@@ -7,18 +7,16 @@ import jsonFunctions
 ##############################################
 
 ################GLOBAL VARIABLES################
-fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
-accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\Accounts\\"
 responseArray = []
 ################################################
 
-def optionOne(api, myAccountID):
+def optionOne(api, myAccountID, fileDirectory, accountDirectory):
 	print("What's the account ID?")
 	targetAccountID = int(input())
 	matchList = getMatchHistory(targetAccountID, api)
 	getMatchDetails(matchList, targetAccountID, api)
-	name = printResults(myAccountID)
-	updateAccountOne(myAccountID, targetAccountID, name)
+	name = printResults(myAccountID, fileDirectory)
+	updateAccountOne(myAccountID, targetAccountID, name, accountDirectory)
 
 def getMatchHistory(targetAccountID, api):
 	while (1):
@@ -64,7 +62,7 @@ def getPlayerInfo(match, targetAccountID):
 	responseArray.append(player['last_hits'])
 	responseArray.append(player['denies'])
 
-def printResults(myAccountID):
+def printResults(myAccountID, fileDirectory):
 	name = jsonFunctions.getName(myAccountID)
 	if (name == None):
 		return
@@ -77,7 +75,7 @@ def printResults(myAccountID):
 		aux = aux + 7
 	return name
 
-def updateAccountOne(myAccountID, targetAccountID, name):
+def updateAccountOne(myAccountID, targetAccountID, name, accountDirectory):
 	nowTime = datetime.now()
 	with open(accountDirectory + name + "File.txt", "a") as saveConsult:
 		saveConsult.write("("+str(nowTime.day) + "/" + str(nowTime.month) + "/" + str(nowTime.year) + " - " + str(nowTime.hour) + ":" +

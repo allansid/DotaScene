@@ -8,9 +8,7 @@ from datetime import datetime
 ##############################################
 
 ################GLOBAL VARIABLES################
-dictDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\dictID\\"
-fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
-accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\Accounts\\"
+
 ################################################
 
 def optionTwo(myAccountID):
