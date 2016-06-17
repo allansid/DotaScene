@@ -53,3 +53,5 @@ I'm using json files to fufil the need of having stored players ID related with 
 **optionOne**: Gathers the information of a player last games and saves on a txt (Using the past functions)
 
 **updateAccountOne**: Updates the account txt file to save that that person has consulted the application about someones last games
+
+# I NEED TO CHANGE EVERYTHING TO HELP ME, NOT USERS (ITS NOT THE TIME TO HELP USERS, NOT YET)
