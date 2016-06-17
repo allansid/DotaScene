@@ -3,6 +3,7 @@
 
 ##################IMPORTS#####################
 from datetime import datetime
+import jsonFunctions
 ##############################################
 
 ################GLOBAL VARIABLES################
@@ -16,8 +17,8 @@ def optionOne(api, myAccountID):
 	targetAccountID = int(input())
 	matchList = getMatchHistory(targetAccountID, api)
 	getMatchDetails(matchList, targetAccountID, api)
-	printResults()
-	updateAccountOne(myAccountID, targetAccountID)
+	name = printResults(myAccountID)
+	updateAccountOne(myAccountID, targetAccountID, name)
 
 def getMatchHistory(targetAccountID, api):
 	while (1):
@@ -63,17 +64,21 @@ def getPlayerInfo(match, targetAccountID):
 	responseArray.append(player['last_hits'])
 	responseArray.append(player['denies'])
 
-def printResults():
+def printResults(myAccountID):
+	name = jsonFunctions.getName(myAccountID)
+	if (name == None):
+		return
 	aux = 0
 	for x in range(0, 100):
-		with open(fileDirectory + str(responseArray[0]) + ".txt", "a") as toCreate:
-			toCreate.write(str(responseArray[0]) + " as " + str(responseArray[aux+1]) + "\n")
+		with open(fileDirectory + name + ".txt", "a") as toCreate:
+			toCreate.write(name + " as " + str(responseArray[aux+1]) + "\n")
 			toCreate.write(str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" + str(responseArray[x+4]) + "\n")
 			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
 		aux = aux + 7
+	return name
 
-def updateAccountOne(myAccountID, targetAccountID):
+def updateAccountOne(myAccountID, targetAccountID, name):
 	nowTime = datetime.now()
-	with open(accountDirectory + str(myAccountID) + ".txt", "a") as saveConsult:
+	with open(accountDirectory + name + "File.txt", "a") as saveConsult:
 		saveConsult.write("("+str(nowTime.day) + "/" + str(nowTime.month) + "/" + str(nowTime.year) + " - " + str(nowTime.hour) + ":" +
-		str(nowTime.minute) + ") - " + str(myAccountID) + " user has consulted " + str(targetAccountID) + " last played matches\n")
+		str(nowTime.minute) + ") - " + str(myAccountID) + " user has consulted " + name + " last played matches\n")

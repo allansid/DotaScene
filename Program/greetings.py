@@ -3,6 +3,7 @@
 
 ##################IMPORTS#####################
 import os
+import jsonFunctions
 from datetime import datetime
 ##############################################
 
@@ -13,16 +14,19 @@ accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\
 
 
 def login():
-	print("What's YOUR account ID")
+	print("\nWhat's YOUR account ID?")
 	myAccountID = int(input())
-	if (findFile(str(myAccountID) + ".txt", accountDirectory)):
+	exists = jsonFunctions.existsPlayer(myAccountID)
+	if (exists):
 		return myAccountID
 	else:
-		print("It's your first time here, let me create your folder")
-		print("We will always save what you're doing in your personal folder")
-		with open(accountDirectory + str(myAccountID) + ".txt", "a") as createAccount:
-			createAccount.write("This file will store all the actions taken by the user " + str(myAccountID) + "\n\n\n")
-		
+		print("\nIt's your first time here, let me create your folder")
+		print("What is your name in game?\n")
+		name = input()
+		print("\nWe will always save what you're doing in your personal folder")
+		with open(accountDirectory + name + "File.txt", "a") as createAccount:
+			createAccount.write("This file will store all the actions taken by the user " + name + "\n\n\n")
+		jsonFunctions.addNewPlayer(name, myAccountID)
 		return myAccountID
 
 def findFile(name, path):
