@@ -51,16 +51,14 @@ def getPlayerInfo(match, targetAccountID):
 	while(1):
 		player = players[x]
 		if (player['account_id'] == targetAccountID):
-			responseArray.append(player['account_id'])
+			responseArray.append(player['hero_name'])
+			responseArray.append(player['kills'])
+			responseArray.append(player['deaths'])
+			responseArray.append(player['assists'])
+			responseArray.append(player['last_hits'])
+			responseArray.append(player['denies'])
 			break
 		x = x + 1
-
-	responseArray.append(player['hero_name'])
-	responseArray.append(player['kills'])
-	responseArray.append(player['deaths'])
-	responseArray.append(player['assists'])
-	responseArray.append(player['last_hits'])
-	responseArray.append(player['denies'])
 
 def printResults(myAccountID, fileDirectory):
 	name = jsonFunctions.getName(myAccountID)
@@ -69,10 +67,10 @@ def printResults(myAccountID, fileDirectory):
 	aux = 0
 	writer = 'w'
 	for x in range(0, 100):
-		content = (name + " as " + str(responseArray[aux+1]) + "\n" + str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" +
-		str(responseArray[x+4]) + "\n" + str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
+		content = (name + " as " + str(responseArray[aux]) + "\n" + str(responseArray[aux+1]) + "/" + str(responseArray[aux+2]) + "/" +
+		str(responseArray[aux+3]) + "\n" + str(responseArray[aux+4]) + "/" + str(responseArray[aux+5]) + "\n\n")
 		if (x != 0):
 			writer = 'a'
 		fileOutputFunctions.optionOneWrite(name, content, fileDirectory, writer)
-		aux = aux + 7
+		aux = aux + 6
 	return name

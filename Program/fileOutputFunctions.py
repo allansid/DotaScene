@@ -31,7 +31,6 @@ def updateAdminFile(adminDirectory, content):
 	writeFile.close
 
 def optionOneWrite(name, content, fileDirectory, writer):
-	aux = 0
 	with open(fileDirectory + name + ".txt", writer) as toCreate:
 		toCreate.write(content)
 	toCreate.close()
