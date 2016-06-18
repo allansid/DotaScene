@@ -11,17 +11,16 @@ import o2
 
 ################GLOBAL VARIABLES################
 fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
-accountDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\Accounts\\"
 ################################################
 
 def main():
-	myAccountID = greetings.login(accountDirectory)
+	myAccountID = greetings.login()
 	while (1):
 		option = greetings.greetings()
 		if (option == 0):
 			break
 		elif (option == 1):
-			o1.optionOne(api, myAccountID, fileDirectory, accountDirectory)
+			o1.optionOne(api, myAccountID, fileDirectory)
 		elif (option == 2):
 			o2.optionTwo(myAccountID)
 		elif (option != 0 or option != 1 or option != 2):

@@ -4,7 +4,6 @@
 ##################IMPORTS#####################
 import os
 import jsonFunctions
-import fileOutputFunctions
 from datetime import datetime
 ##############################################
 
@@ -13,7 +12,7 @@ from datetime import datetime
 ################################################
 
 
-def login(accountDirectory):
+def login():
 	print("\nWhat's YOUR account ID?")
 	myAccountID = int(input())
 	exists = jsonFunctions.existsPlayer(myAccountID)
@@ -23,9 +22,7 @@ def login(accountDirectory):
 		print("\nIt's your first time here, let me create your folder")
 		print("What is your name in game?\n")
 		name = input()
-		print("\nWe will always save what you're doing in your personal folder")
-		content = "This file will store all the actions taken by the user " + name + "\n\n\n"
-		fileOutputFunctions.createAccountFile(myAccountID, name, content, accountDirectory)
+		jsonFunctions.addNewPlayer(name, iD)
 		return myAccountID
 
 def greetings():

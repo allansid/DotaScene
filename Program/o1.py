@@ -10,13 +10,12 @@ import jsonFunctions
 responseArray = []
 ################################################
 
-def optionOne(api, myAccountID, fileDirectory, accountDirectory):
+def optionOne(api, myAccountID, fileDirectory):
 	print("What's the account ID?")
 	targetAccountID = int(input())
 	matchList = getMatchHistory(targetAccountID, api)
 	getMatchDetails(matchList, targetAccountID, api)
 	name = printResults(myAccountID, fileDirectory)
-	updateAccountOne(myAccountID, targetAccountID, name, accountDirectory)
 
 def getMatchHistory(targetAccountID, api):
 	while (1):
@@ -74,9 +73,3 @@ def printResults(myAccountID, fileDirectory):
 			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
 		aux = aux + 7
 	return name
-
-def updateAccountOne(myAccountID, targetAccountID, name, accountDirectory):
-	nowTime = datetime.now()
-	with open(accountDirectory + name + "File.txt", "a") as saveConsult:
-		saveConsult.write("("+str(nowTime.day) + "/" + str(nowTime.month) + "/" + str(nowTime.year) + " - " + str(nowTime.hour) + ":" +
-		str(nowTime.minute) + ") - " + str(myAccountID) + " user has consulted " + name + " last played matches\n")

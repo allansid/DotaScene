@@ -15,11 +15,6 @@ def findFile(name, path):
 		if name in files:
 			return True
 
-def createAccountFile(myAccountID, name, content, accountDirectory):
-    with open(accountDirectory + name + "File.txt", "a") as createAccount:
-        createAccount.write(content)
-    jsonFunctions.addNewPlayer(name, myAccountID)
-
 def jsonLoadFile(jsonDirectory):
     with open(jsonDirectory) as loadFile:
         data = json.load(loadFile)
