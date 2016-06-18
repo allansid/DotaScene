@@ -22,7 +22,7 @@ def login():
 		print("\nIt's your first time here, let me create your folder")
 		print("What is your name in game?\n")
 		name = input()
-		jsonFunctions.addNewPlayer(name, iD)
+		jsonFunctions.addNewPlayer(name, myAccountID)
 		return myAccountID
 
 def greetings():

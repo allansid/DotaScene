@@ -7,14 +7,14 @@ import fileOutputFunctions
 ##############################################
 
 ################GLOBAL VARIABLES################
-jsonDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\dictID\\players.json"
+jsonDirectory = 'C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\dictID\\players.json'
 ################################################
 
 def addNewPlayer(name, ID):
     jsonToFile = {'Name': name, 'ID': ID}
     data = fileOutputFunctions.jsonLoadFile(jsonDirectory)
     data['players'].append(jsonToFile)
-    fileOutputFunctions.jsonLoadFile(jsonDirectory)
+    fileOutputFunctions.jsonWriteFile(jsonDirectory, data)
     print("The player " + name + " with ID " + str(ID) + " has been saved to our database")
 
 def deletePlayer(name):
@@ -26,7 +26,7 @@ def deletePlayer(name):
             break
         elif (len(data['players']) - x == 1):
             print("This player is not in our database, you are good to go")
-    fileOutputFunctions.jsonLoadFile(jsonDirectory)
+    fileOutputFunctions.jsonWriteFile(jsonDirectory, data)
 
 def listPlayer(name):
     data = fileOutputFunctions.jsonLoadFile(jsonDirectory)

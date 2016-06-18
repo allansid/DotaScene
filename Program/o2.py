@@ -4,6 +4,7 @@
 ##################IMPORTS#####################
 import json
 import jsonFunctions
+import sys
 from datetime import datetime
 ##############################################
 
@@ -18,19 +19,26 @@ def optionTwo(myAccountID):
         print ("Type 3 to remove a saved AD")
         print ("Type 0 to go back\n")
         option = int(input())
+        choice = "no"
         if (option == 0):
             break
         elif (option == 1):
             print ("What's the name of the person you want to check?")
-            name = input()
-            jsonFunctions.listPlayer(name)
+            nameCheck = input()
+            jsonFunctions.listPlayer(nameCheck)
         elif (option == 2):
             print ("What is the name of the person you want to add?")
-            name = input()
+            nameAdd = input()
             print ("What is his/her ID?")
             ID = int(input())
-            jsonFunctions.addNewPlayer(name, ID)
+            jsonFunctions.addNewPlayer(nameAdd, ID)
         elif (option == 3):
+            name = jsonFunctions.getName(myAccountID)
             print ("What is the name of the person you want out of the list?")
-            name = input()
-            jsonFunctions.deletePlayer(name)
+            nameDelete = input()
+            if (nameDelete == name):
+                print("If you delete yourself from the players file, you will be forced to leave the program, wish to continue?")
+                choice = input()
+            jsonFunctions.deletePlayer(nameDelete)
+            if (choice.lower() == "yes"):
+                sys.exit("You deleted yourself from the list. You can get back in at anytime!")

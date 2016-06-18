@@ -4,6 +4,7 @@
 ##################IMPORTS#####################
 from datetime import datetime
 import jsonFunctions
+import fileOutputFunctions
 ##############################################
 
 ################GLOBAL VARIABLES################
@@ -66,10 +67,12 @@ def printResults(myAccountID, fileDirectory):
 	if (name == None):
 		return
 	aux = 0
+	writer = 'w'
 	for x in range(0, 100):
-		with open(fileDirectory + name + ".txt", "a") as toCreate:
-			toCreate.write(name + " as " + str(responseArray[aux+1]) + "\n")
-			toCreate.write(str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" + str(responseArray[x+4]) + "\n")
-			toCreate.write(str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
+		content = (name + " as " + str(responseArray[aux+1]) + "\n" + str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "/" +
+		str(responseArray[x+4]) + "\n" + str(responseArray[aux+5]) + "/" + str(responseArray[aux+6]) + "\n\n")
+		if (x != 0):
+			writer = 'a'
+		fileOutputFunctions.optionOneWrite(name, content, fileDirectory, writer)
 		aux = aux + 7
 	return name

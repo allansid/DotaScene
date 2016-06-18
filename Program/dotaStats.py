@@ -3,14 +3,13 @@
 
 ##################IMPORTS#####################
 import dota2api
-
 import greetings
 import o1
 import o2
 ##############################################
 
 ################GLOBAL VARIABLES################
-fileDirectory = "C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\"
+fileDirectory = 'C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\'
 ################################################
 
 def main():
