@@ -4,6 +4,7 @@
 ##################IMPORTS#####################
 import os
 import jsonFunctions
+import fileOutputFunctions
 from datetime import datetime
 ##############################################
 
@@ -23,6 +24,9 @@ def login():
 		print("What is your name in game?\n")
 		name = input()
 		jsonFunctions.addNewPlayer(name, myAccountID)
+		now = datetime.now()
+		adminContent = "(" + str(now.day) + "/" + str(now.month) + "/" + str(now.year) + " - " + str(now.hour) + ":" + str(now.minute) + ") - " + "New account with name " + name + " and ID " + str(myAccountID) + " has been created\n"
+		fileOutputFunctions.updateAdminFile(adminContent)
 		return myAccountID
 
 def greetings():

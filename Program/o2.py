@@ -5,7 +5,6 @@
 import json
 import jsonFunctions
 import sys
-from datetime import datetime
 ##############################################
 
 ################GLOBAL VARIABLES################
@@ -37,7 +36,7 @@ def optionTwo(myAccountID):
             print ("What is the name of the person you want out of the list?")
             nameDelete = input()
             if (nameDelete == name):
-                print("If you delete yourself from the players file, you will be forced to leave the program, wish to continue?")
+                print("If you delete yourself from the players file, you will be forced to leave the program, wish to continue? (Yes/No)")
                 choice = input()
             jsonFunctions.deletePlayer(nameDelete)
             if (choice.lower() == "yes"):

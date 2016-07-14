@@ -27,3 +27,7 @@ Currently working with six different python files.
 **01.py** is where all the coding actually happens and it uses the API. It's called when the user asks to receive the game history of a certain player and saves it in a file.
 
 **02.py** almost the same as 01.py but for the second option, where the user wants to do something with the json file, either add someone new or delete or just check if someone is there already.
+
+# OBS for next commits
+
+(13/07/2016 - 23:29): I need to set the option one function to only consult players saved in my database, cannot search for players that aren't saved and need to create the txt file using the player name accessing the json file and gathering name from ID (function getName is ready to go). Those are minor changes needed for next commmit 

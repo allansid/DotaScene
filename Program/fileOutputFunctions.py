@@ -3,10 +3,11 @@
 
 ##################IMPORTS#####################
 import json
+import os
 ##############################################
 
 ###############GLOBAL VARIABLES###############
-
+adminDirectory = 'C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\admin\\log.txt'
 ##############################################
 
 def findFile(name, path):
@@ -25,12 +26,12 @@ def jsonWriteFile(jsonDirectory, data):
         json.dump(data, writeFile, indent = 4, sort_keys = True)
     writeFile.close
 
-def updateAdminFile(adminDirectory, content):
-	with open(adminDirector, 'a') as writeFile:
-		writeFile.write(content)
-	writeFile.close
-
 def optionOneWrite(name, content, fileDirectory, writer):
-	with open(fileDirectory + name + ".txt", writer) as toCreate:
+	with open(fileDirectory + str(name) + ".txt", writer) as toCreate:
 		toCreate.write(content)
 	toCreate.close()
+
+def updateAdminFile(content):
+	with open(adminDirectory, 'a') as writeFile:
+		writeFile.write(content)
+	writeFile.close

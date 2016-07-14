@@ -2,9 +2,9 @@
 # Program I'm coding to learn the dota2api and maybe use it afterwards as an opening to start on the e-sports scence, you never know.
 
 ##################IMPORTS#####################
-from datetime import datetime
 import jsonFunctions
 import fileOutputFunctions
+from datetime import datetime
 ##############################################
 
 ################GLOBAL VARIABLES################
@@ -12,11 +12,13 @@ responseArray = []
 ################################################
 
 def optionOne(api, myAccountID, fileDirectory):
+	#global resposnseArray
+	del responseArray[:]
 	print("What's the account ID?")
 	targetAccountID = int(input())
 	matchList = getMatchHistory(targetAccountID, api)
 	getMatchDetails(matchList, targetAccountID, api)
-	name = printResults(myAccountID, fileDirectory)
+	name = printResults(myAccountID, fileDirectory, targetAccountID)
 
 def getMatchHistory(targetAccountID, api):
 	while (1):
@@ -60,17 +62,23 @@ def getPlayerInfo(match, targetAccountID):
 			break
 		x = x + 1
 
-def printResults(myAccountID, fileDirectory):
+def printResults(myAccountID, fileDirectory, targetAccountID):
+	print (myAccountID, targetAccountID)
 	name = jsonFunctions.getName(myAccountID)
 	if (name == None):
+		print ("You have to have the player saved in our list first. Try again")
 		return
 	aux = 0
 	writer = 'w'
 	for x in range(0, 100):
-		content = (name + " as " + str(responseArray[aux]) + "\n" + str(responseArray[aux+1]) + "/" + str(responseArray[aux+2]) + "/" +
-		str(responseArray[aux+3]) + "\n" + str(responseArray[aux+4]) + "/" + str(responseArray[aux+5]) + "\n\n")
+		content = str(targetAccountID) + " as " + str(responseArray[aux]) + "\n" + str(responseArray[aux+1]) + "/" + str(responseArray[aux+2]) + "/" + str(responseArray[aux+3]) + "\n" + str(responseArray[aux+4]) + "/" + str(responseArray[aux+5]) + "\n\n"
 		if (x != 0):
 			writer = 'a'
-		fileOutputFunctions.optionOneWrite(name, content, fileDirectory, writer)
+		fileOutputFunctions.optionOneWrite(targetAccountID, content, fileDirectory, writer)
 		aux = aux + 6
+
+	now = datetime.now()
+	adminContent = "(" + str(now.day) + "/" + str(now.month) + "/" + str(now.year) + " - " + str(now.hour) + ":" + str(now.minute) + ") - " + name + ", player of the ID " + str(myAccountID) + " has consulted " + str(targetAccountID) + " last played matches\n"
+	fileOutputFunctions.updateAdminFile(adminContent)
+
 	return name
