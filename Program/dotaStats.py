@@ -1,3 +1,4 @@
+# coding: utf-8
 # Owner: Vinícius Aguiar de Oliveira
 # Program I'm coding to learn the dota2api and maybe use it afterwards as an opening to start on the e-sports scence, you never know.
 
@@ -6,10 +7,12 @@ import dota2api
 import greetings
 import o1
 import o2
+import os
 ##############################################
 
 ################GLOBAL VARIABLES################
-fileDirectory = 'C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\txtResults\\'
+fileDirectory = '../txtResults/'
+apiKey = os.environ['dota2_api_key']
 ################################################
 
 def main():
@@ -26,8 +29,6 @@ def main():
 			print("Wrong option, try again\n")
 
 ##########################RUNNER##########################
-print("What is your API Key?")
-apiKey = input()
 api = dota2api.Initialise(apiKey)
 main()
 ##########################################################

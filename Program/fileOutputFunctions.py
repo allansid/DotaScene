@@ -1,3 +1,4 @@
+# coding: utf-8
 # Owner: Vinícius Aguiar de Oliveira
 # Program I'm coding to learn the dota2api and maybe use it afterwards as an opening to start on the e-sports scence, you never know.
 
@@ -7,7 +8,7 @@ import os
 ##############################################
 
 ###############GLOBAL VARIABLES###############
-adminDirectory = 'C:\\Users\\Vinícius\\Documents\\UFPE\\Coding\\Python\\Dota\\admin\\log.txt'
+adminDirectory = '../admin/log.txt'
 ##############################################
 
 def findFile(name, path):

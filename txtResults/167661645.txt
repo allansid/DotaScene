@@ -1,3 +1,203 @@
+167661645 as Phantom Assassin
+23/7/14
+487/12
+
+167661645 as Timbersaw
+10/7/18
+228/3
+
+167661645 as Riki
+6/4/22
+31/0
+
+167661645 as Legion Commander
+8/8/9
+153/0
+
+167661645 as Sniper
+10/3/17
+143/10
+
+167661645 as Death Prophet
+14/5/7
+154/3
+
+167661645 as Ursa
+12/5/16
+165/6
+
+167661645 as Juggernaut
+16/8/20
+588/21
+
+167661645 as Juggernaut
+17/3/17
+360/12
+
+167661645 as Phantom Assassin
+12/0/6
+195/28
+
+167661645 as Juggernaut
+3/0/5
+265/19
+
+167661645 as Death Prophet
+11/5/18
+278/11
+
+167661645 as Omniknight
+13/7/16
+94/1
+
+167661645 as Silencer
+4/5/16
+34/1
+
+167661645 as Lifestealer
+20/4/16
+403/10
+
+167661645 as Omniknight
+2/6/18
+51/2
+
+167661645 as Lifestealer
+7/4/8
+248/13
+
+167661645 as Elder Titan
+5/7/20
+23/0
+
+167661645 as Omniknight
+3/1/15
+43/3
+
+167661645 as Crystal Maiden
+1/7/12
+33/1
+
+167661645 as Timbersaw
+11/3/18
+157/8
+
+167661645 as Phantom Assassin
+16/2/13
+405/4
+
+167661645 as Sven
+16/4/19
+409/11
+
+167661645 as Legion Commander
+11/3/11
+111/0
+
+167661645 as Lifestealer
+14/2/17
+155/13
+
+167661645 as Outworld Devourer
+14/7/16
+512/17
+
+167661645 as Riki
+6/3/5
+52/1
+
+167661645 as Skywrath Mage
+8/6/13
+30/1
+
+167661645 as Juggernaut
+10/1/11
+337/11
+
+167661645 as Riki
+6/5/21
+37/1
+
+167661645 as Death Prophet
+5/7/17
+164/7
+
+167661645 as Sven
+0/1/8
+67/2
+
+167661645 as Phantom Lancer
+11/1/22
+501/22
+
+167661645 as Anti-Mage
+4/5/3
+155/16
+
+167661645 as Riki
+12/4/21
+13/0
+
+167661645 as Axe
+7/7/14
+125/0
+
+167661645 as Spectre
+9/6/13
+221/6
+
+167661645 as Morphling
+8/4/11
+184/19
+
+167661645 as Medusa
+3/3/16
+163/6
+
+167661645 as Elder Titan
+1/8/4
+10/2
+
+167661645 as Death Prophet
+14/4/21
+214/6
+
+167661645 as Wraith King
+1/3/2
+72/14
+
+167661645 as Juggernaut
+8/0/11
+248/4
+
+167661645 as Legion Commander
+11/7/13
+195/5
+
+167661645 as Juggernaut
+12/3/18
+171/6
+
+167661645 as Elder Titan
+1/4/25
+56/0
+
+167661645 as Axe
+4/10/5
+62/0
+
+167661645 as Elder Titan
+4/2/20
+37/1
+
+167661645 as Outworld Devourer
+4/7/2
+100/13
+
+167661645 as Pudge
+11/11/28
+77/1
+
 167661645 as Abaddon
 4/8/23
 64/5
@@ -198,202 +398,3 @@
 2/7/26
 18/1
 
-167661645 as Anti-Mage
-5/3/6
-371/0
-
-167661645 as Lifestealer
-10/4/13
-249/22
-
-167661645 as Slardar
-2/5/6
-101/13
-
-167661645 as Legion Commander
-8/3/13
-231/12
-
-167661645 as Axe
-3/7/7
-124/0
-
-167661645 as Vengeful Spirit
-0/5/9
-25/0
-
-167661645 as Vengeful Spirit
-2/8/11
-28/1
-
-167661645 as Vengeful Spirit
-3/0/9
-5/3
-
-167661645 as Crystal Maiden
-2/2/0
-6/0
-
-167661645 as Nature's Prophet
-5/4/7
-138/0
-
-167661645 as Necrophos
-11/5/14
-195/7
-
-167661645 as Bounty Hunter
-4/5/22
-36/0
-
-167661645 as Timbersaw
-9/5/10
-359/1
-
-167661645 as Lifestealer
-6/3/4
-136/25
-
-167661645 as Ursa
-9/5/2
-156/13
-
-167661645 as Sniper
-21/8/21
-303/23
-
-167661645 as Skywrath Mage
-4/6/6
-32/3
-
-167661645 as Juggernaut
-3/4/9
-234/1
-
-167661645 as Tidehunter
-6/10/20
-283/1
-
-167661645 as Lina
-10/3/16
-342/3
-
-167661645 as Riki
-8/4/16
-40/0
-
-167661645 as Ursa
-9/3/11
-168/0
-
-167661645 as Sven
-8/1/10
-220/19
-
-167661645 as Troll Warlord
-15/2/17
-172/9
-
-167661645 as Luna
-11/8/16
-390/17
-
-167661645 as Bane
-2/7/14
-22/4
-
-167661645 as Dark Seer
-1/6/4
-118/1
-
-167661645 as Lifestealer
-16/1/13
-248/27
-
-167661645 as Medusa
-4/2/21
-189/13
-
-167661645 as Axe
-5/1/5
-97/1
-
-167661645 as Troll Warlord
-7/3/9
-214/3
-
-167661645 as Troll Warlord
-7/7/10
-127/13
-
-167661645 as Troll Warlord
-11/4/19
-282/5
-
-167661645 as Lifestealer
-11/3/21
-285/32
-
-167661645 as Spectre
-17/4/13
-368/22
-
-167661645 as Oracle
-4/12/25
-41/3
-
-167661645 as Riki
-5/4/18
-21/1
-
-167661645 as Ursa
-4/6/1
-106/14
-
-167661645 as Lina
-23/7/14
-267/6
-
-167661645 as Dark Seer
-5/4/24
-165/1
-
-167661645 as Phantom Lancer
-8/3/17
-340/12
-
-167661645 as Sven
-14/2/16
-418/7
-
-167661645 as Lifestealer
-10/6/13
-314/14
-
-167661645 as Axe
-12/4/17
-140/0
-
-167661645 as Sven
-7/8/7
-262/9
-
-167661645 as Sven
-10/1/4
-197/4
-
-167661645 as Ursa
-12/3/6
-146/7
-
-167661645 as Spectre
-7/1/27
-220/15
-
-167661645 as Lifestealer
-10/1/1
-128/18
-
-167661645 as Bane
-8/3/12
-23/2

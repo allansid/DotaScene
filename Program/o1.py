@@ -1,3 +1,4 @@
+# coding: utf-8
 # Owner: Vinícius Aguiar de Oliveira
 # Program I'm coding to learn the dota2api and maybe use it afterwards as an opening to start on the e-sports scence, you never know.
 
@@ -15,7 +16,7 @@ def optionOne(api, myAccountID, fileDirectory):
 	#global resposnseArray
 	del responseArray[:]
 	print("What's the account ID?")
-	targetAccountID = int(input())
+	targetAccountID = int(raw_input())
 	matchList = getMatchHistory(targetAccountID, api)
 	getMatchDetails(matchList, targetAccountID, api)
 	name = printResults(myAccountID, fileDirectory, targetAccountID)

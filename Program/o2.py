@@ -1,3 +1,4 @@
+# coding: utf-8
 # Owner: Vinícius Aguiar de Oliveira
 # Program I'm coding to learn the dota2api and maybe use it afterwards as an opening to start on the e-sports scence, you never know.
 
@@ -23,21 +24,21 @@ def optionTwo(myAccountID):
             break
         elif (option == 1):
             print ("What's the name of the person you want to check?")
-            nameCheck = input()
+            nameCheck = raw_input()
             jsonFunctions.listPlayer(nameCheck)
         elif (option == 2):
             print ("What is the name of the person you want to add?")
-            nameAdd = input()
+            nameAdd = raw_input()
             print ("What is his/her ID?")
             ID = int(input())
             jsonFunctions.addNewPlayer(nameAdd, ID)
         elif (option == 3):
             name = jsonFunctions.getName(myAccountID)
             print ("What is the name of the person you want out of the list?")
-            nameDelete = input()
+            nameDelete = raw_input()
             if (nameDelete == name):
                 print("If you delete yourself from the players file, you will be forced to leave the program, wish to continue? (Yes/No)")
-                choice = input()
+                choice = raw_input()
             jsonFunctions.deletePlayer(nameDelete)
             if (choice.lower() == "yes"):
                 sys.exit("You deleted yourself from the list. You can get back in at anytime!")
